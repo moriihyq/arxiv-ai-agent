@@ -228,7 +228,7 @@ def daily_arxiv_task():
         print("今日无新摘要")
 
 # 定时任务配置
-schedule.every().day.at("21:25").do(daily_arxiv_task)
+schedule.every().day.at("21:41").do(daily_arxiv_task)
 
 if __name__ == "__main__":
     # 初始化数据库
