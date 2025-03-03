@@ -334,7 +334,7 @@ def daily_arxiv_task():
         print("No papers found today.")
 
 # 使用 schedule 每天定时运行任务
-schedule.every().day.at("21:16").do(daily_arxiv_task) # 每天 22 点运行
+schedule.every().day.at("20:55").do(daily_arxiv_task) # 每天 22 点运行
 
 if __name__ == "__main__":
     # 初始化数据库连接 (创建表如果不存在)
