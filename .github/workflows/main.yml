@@ -26,7 +26,8 @@ jobs:
         # sudo apt-get install -y chromium-browser
 
     - name: Run Crawler
-      env:
-        API_KEY: ${{ secrets.API_KEY }} # 敏感数据通过 GitHub Secrets 配置
-      run: python main.py # 替换为你的爬虫入口文件
+      run: |
+        cd src/    # 切换到子目录
+        python main.py
+
 
