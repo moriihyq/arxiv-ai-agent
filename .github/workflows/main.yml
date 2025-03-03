@@ -2,7 +2,7 @@ name: Daily Python Job
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # 每天UTC时间0点（北京时间8点）
+    - cron: "50 12 * * * "  # 每天UTC时间0点（北京时间8点）
   
   workflow_dispatch:  # 添加手动触发选项
     inputs:
